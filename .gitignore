@@ -1,0 +1,19 @@
+# data
+data/raw/
+*.csv
+*.zip
+
+# models
+models/saved/
+*.pt
+*.pkl
+*.bin
+
+# environment
+venv/
+__pycache__/
+*.pyc
+.env
+
+# jupyter
+.ipynb_checkpoints/
