@@ -1,0 +1,174 @@
+[
+  {
+    "model": "Keyword Baseline",
+    "accuracy": 0.7461,
+    "macro_f1": 0.6436,
+    "macro_precision": 0.7034,
+    "macro_recall": 0.626,
+    "inference_sec": 0.009,
+    "ms_per_sample": 0.02,
+    "per_class": {
+      "bearish": {
+        "precision": 0.6552,
+        "recall": 0.3115,
+        "f1": 0.4222
+      },
+      "neutral": {
+        "precision": 0.7855,
+        "recall": 0.8561,
+        "f1": 0.8193
+      },
+      "bullish": {
+        "precision": 0.6694,
+        "recall": 0.7105,
+        "f1": 0.6894
+      }
+    },
+    "confusion_matrix": [
+      [
+        19,
+        37,
+        5
+      ],
+      [
+        5,
+        238,
+        35
+      ],
+      [
+        5,
+        28,
+        81
+      ]
+    ]
+  },
+  {
+    "model": "TF-IDF + SVM",
+    "accuracy": 0.9205,
+    "macro_f1": 0.8967,
+    "macro_precision": 0.908,
+    "macro_recall": 0.8865,
+    "inference_sec": 0.017,
+    "ms_per_sample": 0.037,
+    "per_class": {
+      "bearish": {
+        "precision": 0.9138,
+        "recall": 0.8689,
+        "f1": 0.8908
+      },
+      "neutral": {
+        "precision": 0.941,
+        "recall": 0.9748,
+        "f1": 0.9576
+      },
+      "bullish": {
+        "precision": 0.8692,
+        "recall": 0.8158,
+        "f1": 0.8416
+      }
+    },
+    "confusion_matrix": [
+      [
+        53,
+        0,
+        8
+      ],
+      [
+        1,
+        271,
+        6
+      ],
+      [
+        4,
+        17,
+        93
+      ]
+    ]
+  },
+  {
+    "model": "BiLSTM + GloVe",
+    "accuracy": 0.8411,
+    "macro_f1": 0.7754,
+    "macro_precision": 0.7654,
+    "macro_recall": 0.808,
+    "inference_sec": 0.276,
+    "ms_per_sample": 0.61,
+    "per_class": {
+      "bearish": {
+        "precision": 0.5652,
+        "recall": 0.8525,
+        "f1": 0.6797
+      },
+      "neutral": {
+        "precision": 0.9658,
+        "recall": 0.9137,
+        "f1": 0.939
+      },
+      "bullish": {
+        "precision": 0.7653,
+        "recall": 0.6579,
+        "f1": 0.7075
+      }
+    },
+    "confusion_matrix": [
+      [
+        52,
+        0,
+        9
+      ],
+      [
+        10,
+        254,
+        14
+      ],
+      [
+        30,
+        9,
+        75
+      ]
+    ]
+  },
+  {
+    "model": "FinBERT",
+    "accuracy": 0.9845,
+    "macro_f1": 0.9792,
+    "macro_precision": 0.979,
+    "macro_recall": 0.9796,
+    "inference_sec": 42.645,
+    "ms_per_sample": 94.139,
+    "per_class": {
+      "bearish": {
+        "precision": 0.9833,
+        "recall": 0.9672,
+        "f1": 0.9752
+      },
+      "neutral": {
+        "precision": 0.9964,
+        "recall": 0.9892,
+        "f1": 0.9928
+      },
+      "bullish": {
+        "precision": 0.9573,
+        "recall": 0.9825,
+        "f1": 0.9697
+      }
+    },
+    "confusion_matrix": [
+      [
+        59,
+        0,
+        2
+      ],
+      [
+        0,
+        275,
+        3
+      ],
+      [
+        1,
+        1,
+        112
+      ]
+    ]
+  }
+]
